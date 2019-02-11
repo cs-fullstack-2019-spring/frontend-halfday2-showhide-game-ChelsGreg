@@ -25,5 +25,11 @@ Some Ideas:
 
 ### I IMPLEMENTED THE FOLLOWING NEW FEATURE(S):
 
+Changed background and table image.
+Added alert to beginning of page load.
+Added header.
+Added Target/Hit Tracker to page.
+Attempted to track score through an array.
+
 
 

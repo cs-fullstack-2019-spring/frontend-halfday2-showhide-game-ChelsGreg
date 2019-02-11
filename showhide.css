@@ -1,6 +1,13 @@
+
+body{
+    background: url("https://ae01.alicdn.com/kf/HTB1oyTjcb_I8KJjy1Xaq6zsxpXaO/Kate-Back-To-90S-Graffiti-Wall-Photography-Backdrops-Daikin-Chain-Backgrounds-For-Photo-Studio-Children.jpg_640x640.jpg");
+}
+
+
 table {
+    margin: 8% 10%;
     /* Use whatever background image (or images) you like */
-    background: url("forest-background.jpg") no-repeat;
+    background: url("https://www.indiewire.com/wp-content/uploads/2017/12/will-smith-fresh-prince-of-bel-air.jpg") no-repeat;
     table-layout: fixed;
 }
 
@@ -8,4 +15,55 @@ table {
 td {
     width: 100px;
     height: 100px;
+}
+
+.targetImg{
+    height:95%;
+    width: 95%;
+    border-radius: 3px;
+
+}
+
+/*for counter*/
+section {
+    padding: 20px;
+    background-color: antiquewhite;
+    width: 30%;
+    font-size: medium;
+
+}
+
+label{
+    color: #a1e206;
+    background: #b83ee2;
+    border-radius: 3px;
+    border-style: dot-dash;
+    font-family: "Abyssinica SIL";
+}
+
+h1{
+    text-align: center;
+    color: red;
+}
+
+h2{
+    text-align: center;
+    color: yellow;
+}
+
+
+}
+
+.btn-primary{
+    background-color: #af0a07;
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    font-size: 16px;
+}
+
+input{
+    border: none;
+    border-radius: 2px;
 }

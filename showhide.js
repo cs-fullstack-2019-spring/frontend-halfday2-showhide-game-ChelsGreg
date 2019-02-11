@@ -1,10 +1,12 @@
 let clicks = 0;
 let targets = 0;
 let hits = 0;
+// var scoreTrack = [];
 
 // Point of Entry called from HTML when page is loaded
 function letsRock() {
     let theGo = document.getElementById("goGetIt");
+    alert("Find the Boomboxes to Jam with Will!");
     theGo.onclick = function () {
         // Get random number of targets and do setup
         const targetKount = document.getElementById("numberOfTargets").value;
@@ -19,6 +21,8 @@ function letsRock() {
         setUpTargetsAndPlay(parseInt(targetKount), parseInt(targetTime));
     };
 }
+
+
 // Utility function to get a random table cell number
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -35,11 +39,30 @@ function clickedTarget(e) {
     if (hit != null && hit.style.display != null) {
         // Make hit target image visible again
         e.target.querySelector("img").style.display = 'block';
+
     }
     console.log("Got a Hit!");
     // Update their hit score
     hits += 1;
+
+    displayScore();
+
+
 }
+
+
+
+// FUNCTION TO DISPLAY COUNTER
+function displayScore()
+{
+
+    $("section").text("Boomboxes: " + targets + " Jams: " + hits);
+    // scoreTrack.push(hits);
+    // console.log("score" + scoreTrack.length-1);
+
+}
+
+
 
 function testThis(el) {
     console.log(el);
@@ -74,7 +97,7 @@ function setUpTargetsAndPlay(numberOfTargets, displayTimeMs) {
         let imgID = "img" + targetNum;
 
         // Set an IMG for each randomly selected cell along with 'click' event handler
-        $('#' + tdID).append("<img id = " + imgID + " class= 'targetImg' src='bird.png'>");
+        $('#' + tdID).append("<img id = " + imgID + " class= 'targetImg' src='https://cdn.shopify.com/s/files/1/0242/2391/products/My_First_Boombox.jpg?v=1503263173'>");
         $('#' + imgID).delay(2000).show(0); // Wait 2 seconds then show the targets
         $('#' + imgID).delay(displayTimeMs).hide(0); // Setup a callback that will hide the images after the specified time
         $('#' + tdID).on("click", clickedTarget);
