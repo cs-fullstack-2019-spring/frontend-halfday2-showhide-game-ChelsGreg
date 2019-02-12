@@ -1,3 +1,6 @@
+### POINTS: 2
+### KEY: In West Philadelphia born and raised.... NICE JOB!
+
 # JavaScript Show/Hide Game
 
 Take this simple show/hide game and make it your own.
